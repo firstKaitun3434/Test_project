@@ -1,0 +1,397 @@
+local Mouse = game:GetService("UserInputService")
+local tweenService = game:GetService("TweenService")
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
+local Frame_9 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.ClipsDescendants = true
+Frame.Position = UDim2.new(0.228545621, 0, 0.154670745, 0)
+Frame.Size = UDim2.new(0, 600, 0, 450)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(13, 15, 12)
+Frame_2.BackgroundTransparency = 0.200
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.ClipsDescendants = true
+Frame_2.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner.CornerRadius = UDim.new(0.01, 0)
+UICorner.Parent = Frame_2
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(1, 0, 1, 0)
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+Frame_4.BackgroundTransparency = 0.900
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(1, 0, 0, 33)
+
+TextButton.Parent = Frame_4
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel.Parent = Frame_4
+TextLabel.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 1, 0)
+TextLabel.Size = UDim2.new(1, 0, 0, 1)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "-"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 1.000
+TextLabel.TextTransparency = 1.000
+
+TextLabel_2.Parent = Frame_4
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0233333334, 0, 0.212121218, 0)
+TextLabel_2.Size = UDim2.new(0, 45, 0, 18)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Bot Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = Frame_4
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0979999825, 0, 0.25909099, 0)
+TextLabel_3.Size = UDim2.new(0, 55, 0, 16)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = " -- Bata Gui"
+TextLabel_3.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_3.TextSize = 13.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_5.Parent = Frame_3
+Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_5.BackgroundTransparency = 0.990
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0, 0, 0.0733333305, 0)
+Frame_5.Size = UDim2.new(1, 0, 1, -33)
+
+Frame_6.Parent = Frame_5
+Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_6.BackgroundTransparency = 0.999
+Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.0233333334, 0, 0.0383693054, 0)
+Frame_6.Size = UDim2.new(0, 125, 0, 385)
+
+Frame_7.Parent = ScreenGui
+Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_7.BackgroundTransparency = 0.950
+Frame_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.BorderSizePixel = 0
+Frame_7.Size = UDim2.new(1, 0, 0.100000001, -5)
+Frame_7.Visible = false
+
+UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_2.Parent = Frame_7
+
+TextButton_2.Parent = Frame_7
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+TextLabel_4.Parent = Frame_7
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0960000008, 0, 0.0895522386, 0)
+TextLabel_4.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Main"
+TextLabel_4.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextLabel_4.TextSize = 18.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UIListLayout.Parent = Frame_6
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+Frame_8.Parent = Frame_5
+Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_8.BackgroundTransparency = 0.999
+Frame_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_8.BorderSizePixel = 0
+Frame_8.Position = UDim2.new(0.251666665, 0, 0.0383693054, 0)
+Frame_8.Size = UDim2.new(0, 435, 0, 385)
+
+Frame_9.Parent = ScreenGui
+Frame_9.Size = UDim2.new(1,0,1,0)
+Frame_9.Visible = false
+Frame_9.BackgroundTransparency = 1
+Frame_9.Position = UDim2.new(0,0,0,0)
+
+
+
+--------------------------------------------------------------------
+
+
+
+
+TextButton.MouseButton1Down:Connect(function()
+	_G.Tweengui = true
+	magnitude = (Frame.Position - UDim2.new(0, Mouse:GetMouseLocation().X , 0, Mouse:GetMouseLocation().Y))
+end)
+TextButton.MouseButton1Up:Connect(function()
+	_G.Tweengui = false
+end)
+game.Players.LocalPlayer:GetMouse().Button1Up:Connect(function()
+	_G.Tweengui = false
+end)
+game:GetService("RunService").RenderStepped:Connect(function()
+	if _G.Tweengui == true then
+		local tweenInfo = TweenInfo.new(0.06,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+		local tween = tweenService:Create(Frame, tweenInfo, {Position = magnitude + UDim2.new(0, Mouse:GetMouseLocation().X , 0, Mouse:GetMouseLocation().Y)})
+		tween:Play()
+	end
+end)
+
+function new(par,Name,Name2)
+	local Frame_10 = Instance.new("Frame")
+	local TextLabel_5 = Instance.new("TextLabel")
+	local UICorner_3 = Instance.new("UICorner")
+	local UIListLayout_2 = Instance.new("UIListLayout")
+
+	Frame_10.Parent = par
+	Frame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame_10.BackgroundTransparency = 1.000
+	Frame_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame_10.BorderSizePixel = 0
+	Frame_10.Size = UDim2.new(1, 0, 0.100000001, -5)
+
+	TextLabel_5.Parent = Frame_10
+	TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_5.BackgroundTransparency = 1.000
+	TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel_5.BorderSizePixel = 0
+	TextLabel_5.Position = UDim2.new(0.0199999996, 0, 0.100000001, 0)
+	TextLabel_5.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+	TextLabel_5.Font = Enum.Font.SourceSans
+	TextLabel_5.Text = Name
+	TextLabel_5.TextColor3 = Color3.fromRGB(180, 180, 180)
+	TextLabel_5.TextSize = 25.000
+	TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+	UICorner_3.Parent = Frame_10
+
+	UIListLayout_2.Parent = par
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_2.Padding = UDim.new(0, 5)
+	--return new_2(par,Name2)
+end
+
+function new_2(par2,Name2,data)
+	local Frame_11 = Instance.new("Frame")
+	local TextLabel_5_2 = Instance.new("TextLabel")
+	local UICorner_4 = Instance.new("UICorner")
+	Frame_11.Parent = par2
+	Frame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame_11.BackgroundTransparency = 0.950
+	Frame_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame_11.BorderSizePixel = 0
+	Frame_11.Size = UDim2.new(1, 0, 0.100000001, -5)
+
+	TextLabel_5_2.Parent = Frame_11
+	TextLabel_5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_5_2.BackgroundTransparency = 1.000
+	TextLabel_5_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel_5_2.BorderSizePixel = 0
+	TextLabel_5_2.Position = UDim2.new(0.0199999996, 0, 0.100000001, 0)
+	TextLabel_5_2.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
+	TextLabel_5_2.Font = Enum.Font.SourceSans
+	TextLabel_5_2.Text = Name2 or "None function name"
+	TextLabel_5_2.TextColor3 = Color3.fromRGB(180, 180, 180)
+	TextLabel_5_2.TextSize = 15.000
+	TextLabel_5_2.TextXAlignment = Enum.TextXAlignment.Left
+	
+	UICorner_4.Parent = Frame_11
+
+	local TextButton_3 = Instance.new("TextButton")
+	local Frame_12 = Instance.new("Frame")
+	local Frame_13 = Instance.new("Frame")
+	local UICorner_6 = Instance.new("UICorner")
+	local UICorner_7 = Instance.new("UICorner")
+	local UIStroke = Instance.new("UIStroke")
+	local BoolValue = Instance.new("BoolValue")
+	
+	BoolValue.Value = data or false --- data
+	Frame_13.Parent = Frame_11
+	
+	
+	TextButton_3.Parent = Frame_11
+	TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_3.BackgroundTransparency = 1
+	TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_3.BorderSizePixel = 0
+	TextButton_3.Size = UDim2.new(1, 0, 1, 0)
+	TextButton_3.Font = Enum.Font.SourceSans
+	TextButton_3.Text = ""
+	TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_3.TextSize = 14.000
+	TextButton_3.MouseButton1Click:Connect(function()
+		BoolValue.Value = not BoolValue.Value
+		if BoolValue.Value then
+			Frame_13.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+			Frame_13.Position = UDim2.new(0.579999983, 0, 0.100000001, 0)
+		else
+			Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Frame_13.Position = UDim2.new(0.0700000003, 0, 0.100000001, 0)
+		end
+	end)
+	
+	Frame_12.Parent = Frame_11
+	Frame_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame_12.BackgroundTransparency = 1
+	Frame_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame_12.BorderSizePixel = 0
+	Frame_12.Position = UDim2.new(0.850000024, 0, 0.149253726, 0)
+	Frame_12.Size = UDim2.new(0, 50, 0, 22)
+
+	UICorner_6.CornerRadius = UDim.new(1, 0)
+	UICorner_6.Parent = Frame_12
+	
+	UIStroke.Parent = Frame_12
+	UIStroke.Color = Color3.new(1, 1, 1)
+	UIStroke.Transparency = 0.8
+	
+	Frame_13.Parent = Frame_12
+	Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame_13.BackgroundTransparency = 0.200
+	Frame_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Frame_13.BorderSizePixel = 0
+	Frame_13.Position = UDim2.new(0.0700000003, 0, 0.100000001, 0) -- 0.579999983, 0, 0.100000001, 0
+	Frame_13.Size = UDim2.new(0, 18, 0, 18)
+	if data then
+		Frame_13.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+		Frame_13.Position = UDim2.new(0.579999983, 0, 0.100000001, 0)
+	end
+	
+
+	UICorner_7.CornerRadius = UDim.new(1, 0)
+	UICorner_7.Parent = Frame_13
+	
+	return TextButton_3
+end
+
+Section = {}
+Main = {}
+Mains = {}
+
+function Section:New_Section(Name)
+	local Clone_Frame_7 = Frame_7:Clone()
+	local Clone_Frame_9 = Frame_9:Clone()
+
+	Clone_Frame_7.Parent = Frame_6
+	Clone_Frame_7:FindFirstChild("TextLabel").Text = Name
+	Clone_Frame_7.Visible = true
+	Clone_Frame_7.Name = Name
+	table.insert(Section,Clone_Frame_7)
+	
+	Clone_Frame_9.Parent = Frame_8
+	Clone_Frame_9.Visible = false
+	Clone_Frame_9.Name = Name
+	table.insert(Main,Clone_Frame_9)
+	
+	partt = Clone_Frame_9
+	
+	new(Clone_Frame_9,Name)
+	if #Section > 1 then
+		Clone_Frame_7.BackgroundTransparency = 0.98
+	else
+		Clone_Frame_7.BackgroundTransparency = 0.95
+		Clone_Frame_9.Visible = true
+	end
+	local tweenInfo = TweenInfo.new(0.2,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+	Clone_Frame_7:FindFirstChild("TextButton").MouseButton1Click:Connect(function()
+		for i,v in pairs(Frame_6:GetChildren()) do
+			if v.ClassName == "Frame" then
+				if v ~= Clone_Frame_7 then
+					if #Section > 1 then
+						local tween = tweenService:Create(v, tweenInfo, {BackgroundTransparency = 0.98})
+						tween:Play()
+					else
+						local tween = tweenService:Create(v, tweenInfo, {BackgroundTransparency = 0.95})
+						tween:Play()
+					end
+				else
+					local tween = tweenService:Create(v, tweenInfo, {BackgroundTransparency = 0.95})
+					tween:Play()
+				end
+			end
+		end
+		for x,y in pairs(Frame_8:GetChildren()) do
+			task.wait()
+			if y ~= Clone_Frame_9 then
+				y.Visible = false
+			else
+				y.Visible = true
+			end
+		end
+	end)
+end
+
+function NewTextButton(a,data)
+	return new_2(partt,a,data)
+end
